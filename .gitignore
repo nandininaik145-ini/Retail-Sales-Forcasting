@@ -17,6 +17,8 @@ eggs/
 lib/
 lib64/
 parts/
+*.CSV
+*.zip
 sdist/
 var/
 wheels/
