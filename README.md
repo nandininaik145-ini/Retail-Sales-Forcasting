@@ -1,73 +1,31 @@
-🛒 Retail Sales Forecasting: End-to-End ML Project
-Domain: Machine Learning & Time Series Analysis
+🛒 Retail Sales Forecasting System
+🌟 Project Overview
+This project is about teaching computers to predict the future of retail. I built a Machine Learning system to forecast daily sales for 1,115 Rossmann stores, helping managers plan their inventory and staffing more accurately.
 
-Academic Level: BCA Final Year Internship Project
+🛠️ Tech Stack
+Language: Python 🐍
 
-Duration: 8 Weeks (Accelerated)
+ML Models: XGBoost, Facebook Prophet, ARIMA
 
-📌 Project Overview
-This project focuses on predicting daily sales for 1,115 Rossmann Store outlets. The goal is to help the retail chain manage inventory and avoid overstocking or understocking by providing a data-driven forecasting system.
+Data Tools: Pandas, NumPy, Matplotlib, Plotly
 
-🛠️ Tech Stack & Tools
-Language: Python 3.x
+Environment: Google Colab & GitHub
 
-Data Handling: Pandas, NumPy
+📅 The 7-Week Journey
+Week 1-3: Data Foundations 🧹
+Cleaned raw datasets, handled missing values, and merged store metadata. Discovered that Promotions are the #1 driver of sales.
 
-Visualization: Matplotlib, Seaborn
+Week 4-5: ML Modeling (XGBoost) 🧠
+Built a high-performance regression model that looks at factors like competitor distance and store types to predict revenue.
 
-Machine Learning: Scikit-learn, XGBoost (Regression)
+Week 6-7: Time-Series (Prophet) ⏳
+Integrated Facebook Prophet to capture the "rhythm" of the stores—understanding how holidays and weekends impact the shopping flow.
 
-Time Series: Statsmodels (ARIMA/SARIMA), Facebook Prophet
+📊 Week 7 Output: The "Face-Off"
+The final output was a Model Comparison Report. By testing XGBoost against Prophet, I found that combining them gives the most accurate results for both sudden sales spikes and long-term trends.
 
-Deployment: Streamlit (Interactive Dashboard)
+🚀 Final Results
+Accuracy: Achieved a high confidence level using RMSPE metrics.
 
-Environment: Google Colab / VS Code
+Impact: The system can now generate a 30-day forecast and export it as a business report.
 
-📅 Internship Journey (Step-by-Step)
-🔹 Week 1 & 2: Data Engineering & Cleaning
-Merged train.csv (Sales) with store.csv (Metadata).
-
-Handled missing values in CompetitionDistance using Median Imputation.
-
-Extracted Date features: Year, Month, Day, and WeekOfYear.
-
-🔹 Week 3: Exploratory Data Analysis (EDA)
-Discovered that Promotions increase sales by over 40% on average.
-
-Identified Weekly Seasonality (Sales peak on Mondays and Fridays).
-
-Analyzed the impact of State and School holidays.
-
-🔹 Week 4: Regression Modeling (XGBoost)
-Built a Gradient Boosting model to capture non-linear relationships.
-
-Achieved a baseline accuracy with competitive RMSE and MAE scores.
-
-🔹 Week 5 & 6: Time Series Mastery (ARIMA & Prophet)
-Implemented ARIMA for statistical trend analysis.
-
-Used Facebook Prophet to automatically handle holiday effects and yearly seasonality.
-
-Compared Regression vs. Time Series performance.
-
-🔹 Week 7 & 8: Dashboard & Final Report
-Developed an interactive Streamlit Dashboard allowing users to select a Store ID and view future forecasts.
-
-Generated a final technical report summarizing the most accurate model.
-
-📊 Key Results
-Best Model: XGBoost/Prophet Hybrid
-
-Observation: The model accurately predicts sales spikes during "Promo" periods with an average error margin of ~10-12%.
-
-🚀 How to Use
-Clone the Repo: git clone https://github.com/YOUR_USERNAME/retailsales.git
-
-Install Dependencies: pip install -r requirements.txt
-
-Run Notebook: Open retailsales.ipynb in Google Colab to see the full training pipeline.
-
-Launch Dashboard: streamlit run app.py
-
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
